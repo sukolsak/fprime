@@ -21,7 +21,7 @@ Requirements:
 1. Linux or Mac OS X operating system (or Windows Subsystem for Linux on Windows)
 2. CMake 3.5 or newer [https://cmake.org/download/](https://cmake.org/download/). CLI tool must be available on system path.
 3. Bash or Bash compatible shell
-4. CLang or GCC compiler
+4. Clang or GCC compiler
 5. Python 3.5+ and PIP [https://www.python.org/downloads/](https://www.python.org/downloads/)
 6. Python Virtual Environment \* (pip install venv or pip install virtualenv)
 
@@ -65,8 +65,8 @@ git clone https://github.com/nasa/fprime
 
 ### Installing F´ Python Requirements
 
-F´ python support packages have certain requirements on various Python packages available on PYPI.
-These requirements are broken out in two files one for the Autocoder tools and one for the GDS
+F´ Python support packages have certain requirements on various Python packages available on PyPI.
+These requirements are broken out in two files: one for the Autocoder tools and one for the GDS
 tools package. This is to enable users to choose which tools they'd like to use.
 
 **Installing F´ Python Packages**
@@ -79,7 +79,7 @@ pip install ./Gds
 
 ## Checking Your F´ Installation
 
-The user may easily checkout that their F´ installation has succeeded by testing the following
+The user may easily check that their F´ installation has succeeded by testing the following
 commands. First the user will test the build and Autocoder install. Next the user will test the GDS
 layer components. Should the user not have installed the given component, the commands won't work.
 
@@ -119,7 +119,7 @@ Now you should be able to run the installation without trouble.
 
 ### Mac OS X and CMake Command Not Found
 
-If the user chooses to install CMake directly from the CMake site (not using homebrew nor Mac Ports), then the CMake command
+If the user chooses to install CMake directly from the CMake site (not using Homebrew nor MacPorts), then the CMake command
 line tools must be added to the user's PATH or default system libraries.  The quickest command to do that is:
 
 ```
@@ -128,13 +128,13 @@ sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install
 More information can be found here: https://stackoverflow.com/questions/30668601/installing-cmake-command-line-tools-on-a-mac
 
 
-### System Python, Packages, and Python3
+### System Python, Packages, and Python 3
 
-Many operating systems offer python PIP packages through their package manager (apt, yum, etc).  Most python projects
+Many operating systems offer Python PIP packages through their package manager (apt, yum, etc).  Most Python projects
 recommend avoiding those packages, but rather installing from PIP in a virtual environment.  The reason for this is that the
-version of the python package from the OS may not be the required version that the python project depends on.  Thus, for
+version of the Python package from the OS may not be the required version that the Python project depends on.  Thus, for
 F´ we strongly recommend using a virtual environment and not system packages.
 
-If the user chooses to use system python as their python to run F´, they must ensure that "python" available on the path
-points to a Python3 install, not the Python 2 installation that most OSes default to.  Also, packages F´ uses when installing
-may break the system Python, and prevent the OS from functioning.  Use at your own risk.
+If the user chooses to use system Python as their Python to run F´, they must ensure that "python" available on the path
+points to a Python 3 install, not the Python 2 installation that most OSes default to.  Also, packages F´ uses when installing
+may break the system Python and prevent the OS from functioning.  Use at your own risk.
